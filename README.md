@@ -16,3 +16,4 @@
 
     # create "templates" folder inside blog inorder to use html files
 
+2. Templates and Template Inheriting

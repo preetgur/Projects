@@ -1,11 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    This is homepage.
-</body>
-</html>
+{% extends "blog/structure.html" %}
+
+{% block title %} Homepage  {% endblock title %}
+
+{% block style %}     {% endblock style %}  
+
+{% block links %}   {% endblock links%}
+
+{% block navbar %} 
+
+    {% include "blog/navbar.html"%}
+
+{% endblock navbar%}
+
+
+{% block content %}
+    <h2>This is homepage</h2>
+{% endblock content%}
+
+
+{% block footer %} 
+    {% include "blog/footer.html" %}
+{% endblock footer %}
+
+{% block script %}   {% endblock script %}
