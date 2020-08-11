@@ -1,0 +1,53 @@
+:root {
+    --backgroundColor : rgb(201, 153, 153);
+    --mainColor : rgba(255, 17, 57, 0.349);
+    --secondaryColor : rgba(25, 129, 72, 0.363);
+    --mainText: rgba(16, 95, 100, 0.144);
+    --text : black;
+}
+
+
+#theme-options-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.theme-dot{
+	height: 30px;
+	width: 30px;
+	background-color: black;
+	border-radius: 50%;
+
+	margin: 5px;
+	border:2px solid cyan;
+	cursor: pointer;
+}
+
+
+.theme-dot:hover{
+	border-width: 5px;
+}
+
+
+#light-mode{
+	background-color: #fff;
+}
+
+#blue-mode{
+	background-color: #192734;
+}
+
+#green-mode{
+	background-color: #78866b;
+}
+
+#name
+{   background: var(--backgroundColor);
+    color : var(--mainColor);
+}
+
+#intro
+{
+    color: var(--text);
+    border: 2px solid var(--mainColor);
+}

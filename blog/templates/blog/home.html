@@ -5,7 +5,11 @@
 
 {% block style %}     {% endblock style %}  
 
-{% block links %}   {% endblock links%}
+{% block links %}   
+<link  rel="stylesheet" href="{% static 'css/default.css'%}">
+
+<link  id ="theme-style" rel="stylesheet" href="{% static 'css/light.css'%}">
+{% endblock links%}
 
 {% block navbar %} 
 
@@ -17,6 +21,20 @@
 {% block content %}
     <h2>This is homepage</h2>
     <a href="{% static 'css/home.css'%}"> css link</a>
+
+    <div id="theme-options-wrapper">
+        <div id="light-mode" class="theme-dot" data-mode="light"></div>
+        <div id="blue-mode" class="theme-dot" data-mode="blue"></div>
+        <div id="green-mode" class="theme-dot" data-mode="green"></div>
+    </div>
+
+
+    <div>
+        <h2 id="name">Gurpreet Singh</h2>
+        <p id="intro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempora modi rerum? Aliquam numquam, dicta maxime explicabo voluptatibus aperiam autem nihil similique dolorum neque atque fuga ipsum recusandae ex saepe.
+        </p>
+    </div>
 {% endblock content%}
 
 
@@ -24,4 +42,7 @@
     {% include "blog/footer.html" %}
 {% endblock footer %}
 
-{% block script %}   {% endblock script %}
+{% block script %}  
+<script type="text/javascript" src="{% static 'js/theme.js' %}"></script>
+
+{% endblock script %}
