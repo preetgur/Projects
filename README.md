@@ -17,3 +17,9 @@
     # create "templates" folder inside blog inorder to use html files
 
 2. Templates and Template Inheriting
+3. Configuring static and media files
+4. Install whitenoise for static files
+    >> pip install whitenoise
+
+    # Add to the Middleware
+    >>'whitenoise.middleware.WhiteNoiseMiddleware'
