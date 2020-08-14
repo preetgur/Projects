@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Post,Tag
+from .forms import PostForm
 # Create your views here.
 
 def home(request):
@@ -24,3 +25,18 @@ def posts(request):
     }
     return render(request,"blog/posts.html",context) 
        
+# curd 
+
+def createPost(request):
+
+    form = PostForm()
+
+    if request.method == "POST":
+        form = PostForm(request.POST,request.FILES)
+        if form.is_valid():
+            form.save()
+     
+            return redirect('posts')
+
+    context = { 'form':form}
+    return render(request,"blog/createPost.html",context)    

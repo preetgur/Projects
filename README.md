@@ -34,3 +34,15 @@
     and uselike
     >> <img src=" {{post.thumbnail.url}}">
     
+8. create a form of Post model in order to use curd.
+    # adding the checkbox to manytomany fields in forms.py    
+    >> widgets = {
+
+            'tags': forms.CheckboxSelectMultiple(),
+        }
+
+9. In order to add image to post we have to use enctype="multipart/form-data"
+    >>  <form action="" method ="post" enctype="multipart/form-data">
+
+    in order to save the image to database we have to do as :
+    >> form = PostForm(request.POST,request.FILES)

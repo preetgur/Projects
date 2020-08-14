@@ -64,8 +64,9 @@
                     </div>
                     <div class="card-body">
 
-
-                        <img src=" {{post.thumbnail.url}}" alt="no image">
+                        {% if post.thumbnail %}
+                            <img src=" {{post.thumbnail.url}}" alt="no image">
+                        {% endif %}    
                         <h5 class="card-title">{{post.sub_headline}}</h5>
                         <p class="card-text">{{post.context}}</p>
                     </div>
