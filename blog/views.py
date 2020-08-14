@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import Post,Tag
 # Create your views here.
 
 def home(request):
@@ -9,12 +9,18 @@ def home(request):
 
 # single post
 
-def post(request):
+def post(request,pk):
+    
+    context = {
+        'post':Post.objects.get(id = pk)
+    }
 
-    return render(request,"blog/post.html")
+    return render(request,"blog/post.html",context)
 
 # All post
 def posts(request):
-
-    return render(request,"blog/posts.html") 
+    context = { 
+        'posts':Post.objects.filter(active=True)
+    }
+    return render(request,"blog/posts.html",context) 
        
