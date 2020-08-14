@@ -14,6 +14,7 @@ class Post(models.Model):
     active = models.BooleanField(default = False)
 
     tags = models.ManyToManyField('Tag',blank=True)
+    thumbnail = models.ImageField(null=True,blank=True,upload_to="media")
     #slugs =
     
 

@@ -29,3 +29,8 @@
 
     Register the modesl in admin.py
 6. create a url and view method for accessing singel post and named the url in urls.py
+7. Adding the image field
+    >> thumbnail = models.ImageField(null=True,blank=True,upload_to="media")
+    and uselike
+    >> <img src=" {{post.thumbnail.url}}">
+    
