@@ -40,3 +40,10 @@ def createPost(request):
 
     context = { 'form':form}
     return render(request,"blog/createPost.html",context)    
+
+
+    # dennis layout
+
+def dennis(request):
+
+    return render(request,"blog/dennis.html")

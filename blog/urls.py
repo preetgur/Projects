@@ -9,4 +9,7 @@ urlpatterns = [
 
     # curd
     path("createPost",views.createPost,name="createPost"),
+
+    #dennis
+    path("dennis",views.dennis,name="dennis"),
 ]

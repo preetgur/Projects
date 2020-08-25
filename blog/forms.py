@@ -11,5 +11,5 @@ class PostForm(forms.ModelForm):
 
         widgets = {
 
-            'tags': forms.CheckboxSelectMultiple(),
+            'tags': forms.CheckboxSelectMultiple(), # adding checkbox to manytomany relationship
         }

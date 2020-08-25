@@ -1,0 +1,160 @@
+
+{% extends "blog/structure.html" %}
+{% load static %}
+
+{% block title %} Dennis {% endblock title %}
+
+{% block style %}  
+
+
+{% endblock style %}  
+
+{% block links %}  
+    <link rel="stylesheet" href="{% static 'css/dennis.css'%}">
+{% endblock links%}
+
+{% block navbar %} 
+
+    {% comment %} {% include "blog/navbar.html"%} {% endcomment %}
+
+{% endblock navbar%}
+
+
+{% block content %}
+
+<div class="main-container">
+<section class="s1">
+
+        <div class="intro">
+            <h1>Hi, I'm Gurpreet Singh</h1>
+        </div>
+ 
+        <p>I am Python Developer</p>
+     
+   
+</section>
+
+<section class="s2">
+
+    <div class="wrapper">
+        <div class="nav-wrapper">    
+        
+            <div class="dots-wrapper">
+                <div class="dot-1">  </div>
+                <div class="dot-2">  </div>
+
+                <div class="dot-3">  </div>
+
+            </div>
+
+            <div class="menu-wrapper">
+         
+
+                <ul class="menu">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">Projects</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="left-column">
+        
+        
+            <img src="{% static "images/gurpreet.jpg"%}" alt="">
+        
+            <h5>preetgur0137@gmail.com</h5>
+            <p>Address Village Khandoli,City Rajpura</p>
+           
+        
+        </div>
+        <div class="right-column">
+
+            <div id = "corner-1" class="corner"></div>
+            <div id= "corner-2" class="corner"></div>
+
+            <div class="qualification">
+                <h3>Educational Qualification</h3>
+                <ul>
+                    <li>B.Tech [CSE] in 2019 with overall 73%</li>
+                    <li>Non-Medical in 2015 with 76%</li>
+                    <li>Matric in 2013 with 72% </li>
+                </ul>
+            </div>
+            
+            <div id = "corner-3" class="corner"></div>
+            <div id= "corner-4" class="corner"></div>
+
+            <div class="skills">
+                <h3>Technical skills</h3>
+                 <ul>
+                    <li>Frontend Technology : HTML, CSS, JS</li>
+                    <li>Backend Technology : Python</li>
+                    <li>Framework Known : JQuery, Django, React</li>
+                </ul>   
+            </div>
+
+         </div>
+
+    </div>
+
+</section>
+
+<section class="s4">
+
+  <div class="aboutme">
+    <h2>More About Me</h2>
+    <p>I Completed my B.Tech/CSE graduation in 2019 from Baba Banda Singh Bahadur Enginering College, Fatehgarh Sahib which is affiliated from Punjab Technical University, Jalandhar.</p>
+  </div>
+
+  <div class="follow-me">
+    <h2>Follow Me on </h2>
+    <p>Github Account <a href="https://github.com/preetgur/">Click Here</a></p>
+  </div>  
+</section>
+
+<section class="s3">
+
+    <div class="wrapper-projects">
+        <div class="heading">  
+            <h3>Some Of My Past Django Projects</h3>
+        </div>
+        <div class="projects">
+            
+            <div class="project">
+                 <img src="https://dennisivy-personal.s3.amazonaws.com/images/Dennis.jpg" alt="">
+
+                <h3>Weather App</h3>
+            </div>
+
+             <div class="project">
+                 <img src="https://dennisivy-personal.s3.amazonaws.com/images/Dennis.jpg" alt="">
+
+                <h3>Blog App</h3>
+            </div>
+
+            <div class="project">
+                 <img src="https://dennisivy-personal.s3.amazonaws.com/images/Dennis.jpg" alt="">
+
+                <h3>Poll App</h3>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+ </div>
+{% endblock content%}
+
+
+{% block footer %} 
+    {% comment %} {% include "blog/footer.html" %} {% endcomment %}
+{% endblock footer %}
+
+{% block script %}  
+{% comment %} <script type="text/javascript" src="{% static 'js/theme.js' %}"></script> {% endcomment %}
+
+{% endblock script %}
